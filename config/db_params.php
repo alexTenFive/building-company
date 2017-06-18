@@ -2,7 +2,7 @@
 
 return [
     'host' => 'localhost',
-    'dbname' => 'buildcomp',
+    'dbname' => 'building_company',
     'port' => '5432',
     'user' => 'root',
     'password' => 'password',
