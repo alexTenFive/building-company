@@ -24,7 +24,7 @@
                 </div>
                 <div class="footer-col col-md-4">
                     <h3>О разработчике</h3>
-                    <p>Духно Александр Юрьевич. Студент 3 курса ПИ-3.01. <br>Сайт на <a href="https://github.com/alexTenFive">github</a></p>
+                    <p>Духно Александр Юрьевич. Студент 3 курса ПИ-3.01. <br>Сайт на <a target="_blank" href="https://github.com/alexTenFive">github</a></p>
                 </div>
             </div>
         </div>

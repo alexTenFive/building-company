@@ -13,5 +13,9 @@ return [
 
     //account
     'clients/account' => 'clientsAccount/index',
-    'employees/account' => 'employeesAccount/index'
+    'employees/account' => 'employeesAccount/index',
+
+    //registration
+    'registration' => 'registration/index',
+    'registration/success' => 'registration/success'
 ];

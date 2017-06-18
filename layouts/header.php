@@ -53,6 +53,10 @@
                 <li class="page-scroll">
                     <a href="/catalog/">Объекты</a>
                 </li>
+
+                <li class="page-scroll">
+                    <a href="/registration/">Регистрация</a>
+                </li>
                 <li class="page-scroll">
                     <a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         вход

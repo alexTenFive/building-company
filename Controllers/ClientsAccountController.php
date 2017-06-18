@@ -10,6 +10,8 @@ class ClientsAccountController
 {
     public function actionIndex()
     {
+        $result = Clients::checkLogged();
+
         require_once ROOT . '/Views/Account/Clients/index.php';
 
         return true;
