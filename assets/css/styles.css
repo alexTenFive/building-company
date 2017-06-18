@@ -17,3 +17,13 @@
 {
     padding-left: 44.666666%;
 }
+
+header div.auth-form {
+    margin: 0 auto;
+    height: 100%;
+}
+
+header.employee {
+    background-color: #d26253;
+}
+

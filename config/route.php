@@ -5,5 +5,13 @@
 return [
     '' => 'site/index/$1',
     'catalog/page-([0-9]+)' => 'catalog/index/$1',
-    'catalog' => 'catalog/index'
+    'catalog' => 'catalog/index',
+
+    //auth
+    'clients/auth' => 'auth/clientsAuth',
+    'employees/auth' => 'auth/employeesAuth',
+
+    //account
+    'clients/account' => 'clientsAccount/index',
+    'employees/account' => 'employeesAccount/index'
 ];
