@@ -3,12 +3,15 @@
 
 class Objects
 {
-    const OBJECTS_COUNT = 3;
+    const OBJECTS_COUNT = 12;
 
-    public static function getObjects()
+    public static function getObjects($count = self::OBJECTS_COUNT, $page = 1)
     {
+        $count = intval($count);
+
         $objects = [];
 
+        $offset = $count * ($page - 1);
         $db = DB::getConnection();
 
         $query = "SELECT project_id,
@@ -22,7 +25,7 @@ class Objects
                          image
                   FROM main.project 
                   INNER JOIN main.client AS client ON client.client_id = main.project.client_id";
-        $query .= " LIMIT " . self::OBJECTS_COUNT;
+        $query .= " LIMIT " . $count . " OFFSET " . $offset;
 
         $res = $db->prepare($query);
         $res->execute();
@@ -43,5 +46,21 @@ class Objects
         }
 
         return $objects;
+    }
+
+    public static function getTotalObjects()
+    {
+        $total = 0;
+
+        $db = DB::getConnection();
+
+        $query = "SELECT COUNT(*) AS count FROM main.project";
+
+        $res = $db->prepare($query);
+        $res->execute();
+        $row = $res->fetch();
+        $total = $row['count'];
+
+        return $total;
     }
 }
