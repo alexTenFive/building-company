@@ -6,7 +6,7 @@ define("ROOT", __DIR__);
 
 session_start();
 
-include "style.css";
+include "head.css";
 // some comment
 require_once '/Components/autoload.php';
 
